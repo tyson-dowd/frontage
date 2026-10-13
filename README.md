@@ -35,6 +35,36 @@ open index.html
 
 Then visit `http://localhost:8080` in your web browser.
 
+## Hosting on GitHub Pages with Namecheap DNS
+
+This static site can be published from the repository root. In GitHub, open
+**Settings → Pages**, select **Deploy from a branch**, then choose `main` and
+`/(root)`. After the first deployment, the default URL is
+`https://tyson-dowd.github.io/frontage/`. New commits to `main` will publish
+automatically.
+
+To use a Namecheap domain for this site:
+
+1. Enable GitHub Pages as described above.
+2. In Namecheap, open **Domain List → Manage → Advanced DNS** and add:
+   - For an apex domain (`example.com`), four **A** records with host `@` and
+     values `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, and
+     `185.199.111.153`.
+   - For `www.example.com`, a **CNAME** record with host `www` and value
+     `tyson-dowd.github.io`.
+3. In GitHub **Settings → Pages**, set the custom domain to the hostname you
+   want to use and enable **Enforce HTTPS** once it becomes available. Add that
+   exact hostname as the sole line in a root-level `CNAME` file in this
+   repository.
+4. If you use a different hostname, update the DNS records accordingly. Allow
+   time for DNS propagation and HTTPS certificate provisioning to complete.
+
+Do not use Namecheap's **URL Redirect Record** for this setup: it redirects
+visitors to another URL rather than pointing the domain at this hosted site.
+Use DNS records to connect the domain to GitHub Pages. The domain is not yet
+specified, so this repository intentionally has no `CNAME` file; add it after
+choosing the domain.
+
 ## Customization
 
 - Open `index.html` and look for `<!-- EDIT PLACEHOLDER: ... -->` comments to customize bio text, projects, hobbies, and travel plans.
