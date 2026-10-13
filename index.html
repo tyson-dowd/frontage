@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tyson Dowd &mdash; Personal Front Page</title>
+  <meta name="description" content="Personal front page for Tyson Dowd with information about projects, hobbies, travel plans, and links to find me online.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
+</head>
+<body>
+  <!-- Decorative organic red splotches and color atmosphere -->
+  <div class="organic-splotches-container" aria-hidden="true">
+    <svg width="0" height="0" class="svg-defs">
+      <defs>
+        <radialGradient id="redGrad1" cx="35%" cy="35%" r="65%">
+          <stop offset="0%" stop-color="#fb7185" stop-opacity="0.9" />
+          <stop offset="40%" stop-color="#e11d48" stop-opacity="0.75" />
+          <stop offset="75%" stop-color="#9f1239" stop-opacity="0.4" />
+          <stop offset="100%" stop-color="#881337" stop-opacity="0" />
+        </radialGradient>
+        <radialGradient id="redGrad2" cx="50%" cy="40%" r="60%">
+          <stop offset="0%" stop-color="#fda4af" stop-opacity="0.85" />
+          <stop offset="35%" stop-color="#f43f5e" stop-opacity="0.7" />
+          <stop offset="70%" stop-color="#be123c" stop-opacity="0.45" />
+          <stop offset="100%" stop-color="#4c0519" stop-opacity="0" />
+        </radialGradient>
+        <radialGradient id="redGrad3" cx="40%" cy="50%" r="60%">
+          <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.9" />
+          <stop offset="50%" stop-color="#9f1239" stop-opacity="0.6" />
+          <stop offset="100%" stop-color="#3f0714" stop-opacity="0" />
+        </radialGradient>
+      </defs>
+    </svg>
+
+    <div class="splotch splotch-hero">
+      <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+        <path fill="url(#redGrad1)" d="M410,180 C470,260 440,370 360,420 C280,470 170,450 110,380 C50,310 40,200 90,130 C140,60 250,30 330,70 C410,110 350,100 410,180 Z" />
+        <circle fill="url(#redGrad1)" cx="80" cy="90" r="24" opacity="0.6" />
+        <circle fill="url(#redGrad1)" cx="430" cy="380" r="18" opacity="0.5" />
+        <circle fill="url(#redGrad1)" cx="390" cy="60" r="14" opacity="0.7" />
+      </svg>
+    </div>
+
+    <div class="splotch splotch-mid">
+      <svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+        <path fill="url(#redGrad2)" d="M470,220 C530,320 490,460 390,520 C290,580 160,530 90,430 C20,330 30,190 110,110 C190,30 330,20 420,80 C510,140 410,120 470,220 Z" />
+        <circle fill="url(#redGrad2)" cx="500" cy="130" r="28" opacity="0.55" />
+        <circle fill="url(#redGrad2)" cx="70" cy="480" r="20" opacity="0.6" />
+      </svg>
+    </div>
+
+    <div class="splotch splotch-travel">
+      <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+        <path fill="url(#redGrad3)" d="M380,150 C450,220 460,340 400,410 C340,480 220,470 140,420 C60,370 40,260 80,180 C120,100 220,50 300,70 C380,90 310,80 380,150 Z" />
+        <circle fill="url(#redGrad3)" cx="440" cy="110" r="18" opacity="0.6" />
+        <circle fill="url(#redGrad3)" cx="60" cy="220" r="16" opacity="0.5" />
+      </svg>
+    </div>
+
+    <div class="splotch splotch-bottom">
+      <svg viewBox="0 0 450 450" xmlns="http://www.w3.org/2000/svg">
+        <path fill="url(#redGrad1)" d="M320,120 C380,180 370,280 310,340 C250,400 150,390 100,330 C50,270 60,170 120,110 C180,50 260,60 320,120 Z" />
+        <circle fill="url(#redGrad1)" cx="350" cy="80" r="22" opacity="0.5" />
+      </svg>
+    </div>
+    <!-- Subtle accent glows: blue, violet, green, gold -->
+    <div class="ambient-glow glow-blue"></div>
+    <div class="ambient-glow glow-violet"></div>
+    <div class="ambient-glow glow-green"></div>
+    <div class="ambient-glow glow-gold"></div>
+  </div>
+
+  <div class="site-wrapper">
+    <!-- Header & Navigation -->
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="#top" class="brand">
+          <span class="brand-monogram">TD</span>
+          <span class="brand-name">Tyson Dowd</span>
+        </a>
+        <nav class="nav-links" aria-label="Main Navigation">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#hobbies">Hobbies</a>
+          <a href="#travel">Travel</a>
+          <a href="#redirects">Find Me</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>Online &amp; welcoming new connections</span>
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="accent-gold">Tyson Dowd</span>.
+          </h1>
+          <p class="hero-tagline">
+            Welcome to my personal outpost. This is the front page where I share what I'm working on, where I'm traveling, and where to find me across the web.
+          </p>
+          <div class="hero-actions">
+            <a href="#redirects" class="btn btn-primary">Find Me Online &rarr;</a>
+            <a href="#projects" class="btn btn-secondary">Explore Projects</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="card-header-bar">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-gold"></span>
+            <span class="dot dot-green"></span>
+            <span class="card-bar-title">frontage.terminal</span>
+          </div>
+          <div class="terminal-body">
+            <p><span class="term-prompt">$</span> <span class="term-cmd">whoami</span></p>
+            <p class="term-out term-violet">Tyson Dowd — Developer, Explorer, Creator</p>
+            <p><span class="term-prompt">$</span> <span class="term-cmd">cat current-focus.txt</span></p>
+            <p class="term-out term-green">&#10003; Building projects &amp; exploring tech</p>
+            <p class="term-out term-blue">&#10003; Planning next global adventures</p>
+            <p class="term-out term-gold">&#10003; Always curious, always learning</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="content-section">
+        <div class="section-badge badge-green">About</div>
+        <h2 class="section-title">A Bit About Me</h2>
+        <div class="card about-card">
+          <p class="lead">
+            I'm a technologist and maker passionate about building thoughtful tools, exploring ideas, and traveling the world.
+          </p>
+          <p>
+            <!-- EDIT PLACEHOLDER: Fill in more background details below -->
+            This page serves as my central hub and jumping-off point. Whether you are looking for my latest software projects, wondering what I am currently tinkering with in my free time, or seeing where my next itinerary takes me, you'll find the essentials right here.
+          </p>
+          <div class="highlights-grid">
+            <div class="highlight-item">
+              <span class="highlight-icon accent-green">❖</span>
+              <h3>Technology</h3>
+              <p>Designing software, building reliable tools, and working with modern web systems.</p>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon accent-gold">★</span>
+              <h3>Exploration</h3>
+              <p>Wandering through new cities, hiking mountain trails, and discovering local spots.</p>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon accent-violet">✦</span>
+              <h3>Curiosity</h3>
+              <p>Diving into reading, tinkering with gadgets, and picking up new hobbies.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="content-section">
+        <div class="section-badge badge-gold">Work &amp; Tinkering</div>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-sub">A sampling of recent experiments, open source contributions, and personal endeavors.</p>
+
+        <div class="cards-grid">
+          <!-- Project 1 -->
+          <article class="card project-card">
+            <div class="card-meta">
+              <span class="pill pill-green">Featured</span>
+              <span class="pill pill-blue">Web</span>
+            </div>
+            <h3 class="card-title">Frontage Hub</h3>
+            <p class="card-desc">
+              A minimalist, aesthetic front-page portal designed with deep tones and organic splotches, providing redirects and snapshots of current ventures.
+            </p>
+            <div class="card-tags">
+              <span>HTML5</span>
+              <span>Modern CSS</span>
+              <span>Responsive</span>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/tyson-dowd/frontage" class="card-link accent-gold" target="_blank" rel="noopener noreferrer">Source Code &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="card project-card">
+            <div class="card-meta">
+              <span class="pill pill-violet">Open Source</span>
+              <span class="pill pill-gold">Tooling</span>
+            </div>
+            <h3 class="card-title">Project Alpha</h3>
+            <p class="card-desc">
+              <!-- EDIT PLACEHOLDER: Replace with your real project info -->
+              A utility library aimed at streamlining developer workflows and automated deployment pipelines. Designed for developer joy.
+            </p>
+            <div class="card-tags">
+              <span>CLI</span>
+              <span>Automation</span>
+              <span>Open Source</span>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="card-link accent-violet">View Details &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="card project-card">
+            <div class="card-meta">
+              <span class="pill pill-blue">Systems</span>
+            </div>
+            <h3 class="card-title">Project Beta</h3>
+            <p class="card-desc">
+              <!-- EDIT PLACEHOLDER: Replace with your real project info -->
+              An experimental data visualization system exploring interactive graphs, latency monitoring, and aesthetic telemetry.
+            </p>
+            <div class="card-tags">
+              <span>Visualization</span>
+              <span>Telemetry</span>
+              <span>Experiments</span>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="card-link accent-blue">Read Notes &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Hobbies & Interests Section -->
+      <section id="hobbies" class="content-section">
+        <div class="section-badge badge-violet">Pastimes</div>
+        <h2 class="section-title">Hobbies &amp; Interests</h2>
+        <p class="section-sub">When I'm away from keyboard, here is what keeps my mind engaged and inspired.</p>
+
+        <div class="cards-grid hobbies-grid">
+          <div class="card hobby-card">
+            <div class="hobby-icon accent-green">⚑</div>
+            <h3 class="card-title">Hiking &amp; Outdoors</h3>
+            <p class="card-desc">
+              <!-- EDIT PLACEHOLDER: Add favorite trails or outdoor goals -->
+              Exploring wilderness trails, alpine treks, and scenic outlooks. Always eager to trade screen time for fresh mountain air.
+            </p>
+          </div>
+
+          <div class="card hobby-card">
+            <div class="hobby-icon accent-gold">☕</div>
+            <h3 class="card-title">Specialty Coffee &amp; Cooking</h3>
+            <p class="card-desc">
+              <!-- EDIT PLACEHOLDER: Add coffee gear or favorite recipes -->
+              Dialing in espresso roasts, perfecting pour-overs, and testing new recipes across global culinary traditions.
+            </p>
+          </div>
+
+          <div class="card hobby-card">
+            <div class="hobby-icon accent-violet">📖</div>
+            <h3 class="card-title">Reading &amp; History</h3>
+            <p class="card-desc">
+              <!-- EDIT PLACEHOLDER: Add recent book recommendations -->
+              Diving into history, sci-fi classics, technology memoirs, and philosophy. Always hunting for thought-provoking reads.
+            </p>
+          </div>
+
+          <div class="card hobby-card">
+            <div class="hobby-icon accent-blue">📷</div>
+            <h3 class="card-title">Photography</h3>
+            <p class="card-desc">
+              <!-- EDIT PLACEHOLDER: Add camera gear or photo album link -->
+              Capturing candid street moments, landscape vistas, and the geometric lines of urban architecture while on the move.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Travel Plans Section -->
+      <section id="travel" class="content-section">
+        <div class="section-badge badge-blue">Wanderlust</div>
+        <h2 class="section-title">Travel Plans &amp; Destinations</h2>
+        <p class="section-sub">Upcoming routes, recent expeditions, and places on the horizon.</p>
+
+        <div class="travel-container card">
+          <div class="travel-upcoming">
+            <h3 class="travel-group-title"><span class="accent-gold">✦</span> Upcoming Itineraries</h3>
+            <ul class="travel-list">
+              <li class="travel-item">
+                <div class="travel-status status-confirmed">Upcoming</div>
+                <div class="travel-info">
+                  <strong>Japan (Tokyo, Kyoto, Hokkaido)</strong>
+                  <span class="travel-dates">Late Autumn 2026 &bull; Food tour, temples &amp; fall foliage</span>
+                </div>
+              </li>
+              <li class="travel-item">
+                <div class="travel-status status-planning">Planning</div>
+                <div class="travel-info">
+                  <strong>New Zealand South Island</strong>
+                  <span class="travel-dates">Early 2027 &bull; Tramping, alpine passes &amp; fiords</span>
+                </div>
+              </li>
+              <li class="travel-item">
+                <div class="travel-status status-idea">Wishlist</div>
+                <div class="travel-info">
+                  <strong>Patagonia &amp; Chilean Fjords</strong>
+                  <span class="travel-dates">TBD &bull; Trekking Torres del Paine</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="travel-note">
+            <h4>Visiting my neighborhood or crossing paths?</h4>
+            <p>
+              If you happen to be in the same city or along these routes, let's grab coffee or go for a walk! Feel free to reach out through any of the links below.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quick Redirects & Online Presence Section -->
+      <section id="redirects" class="content-section">
+        <div class="section-badge badge-red">Find Me Online</div>
+        <h2 class="section-title">Where to Find Me</h2>
+        <p class="section-sub">Direct links to my external profiles, code repositories, and online corners.</p>
+
+        <div class="redirects-grid">
+          <a href="https://github.com/tyson-dowd" class="redirect-card card" target="_blank" rel="noopener noreferrer">
+            <div class="redirect-icon-box box-green">
+              <span>GH</span>
+            </div>
+            <div class="redirect-text">
+              <h3>GitHub</h3>
+              <p>github.com/tyson-dowd</p>
+              <span class="redirect-hint">Code, open-source repositories &amp; experiments &rarr;</span>
+            </div>
+          </a>
+
+          <a href="https://linkedin.com" class="redirect-card card" target="_blank" rel="noopener noreferrer">
+            <div class="redirect-icon-box box-blue">
+              <span>IN</span>
+            </div>
+            <div class="redirect-text">
+              <h3>LinkedIn</h3>
+              <p>Professional Profile</p>
+              <span class="redirect-hint">Career history &amp; professional network &rarr;</span>
+            </div>
+          </a>
+
+          <a href="mailto:hello@example.com" class="redirect-card card">
+            <div class="redirect-icon-box box-gold">
+              <span>@</span>
+            </div>
+            <div class="redirect-text">
+              <h3>Email</h3>
+              <p>hello@example.com</p>
+              <span class="redirect-hint">Drop me a line directly &rarr;</span>
+            </div>
+          </a>
+
+          <a href="https://bsky.app" class="redirect-card card" target="_blank" rel="noopener noreferrer">
+            <div class="redirect-icon-box box-violet">
+              <span>🦋</span>
+            </div>
+            <div class="redirect-text">
+              <h3>Bluesky / Social</h3>
+              <p>@tyson-dowd</p>
+              <span class="redirect-hint">Discussions, quick thoughts &amp; updates &rarr;</span>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>&copy; <span id="year">2026</span> Tyson Dowd. Hosted with care on the web.</p>
+        <p class="footer-sub">Designed with deep dark tones, accents of green, gold, violet, blue &amp; organic splotches of red.</p>
+        <a href="#top" class="back-to-top" aria-label="Back to top of page">&uarr; Back to top</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Smooth dynamic year update
+    const yearEl = document.getElementById('year');
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear();
+    }
+  </script>
+</body>
+</html>
