@@ -35,6 +35,27 @@ open index.html
 
 Then visit `http://localhost:8080` in your web browser.
 
+## Hosting on GitHub Pages with Namecheap DNS
+
+GitHub Pages publishes this static site from `main` and the repository root.
+The configured custom domain is [`www.tysond.xyz`](https://www.tysond.xyz/);
+the root-level `CNAME` file contains that hostname.
+
+In Namecheap, open **Domain List → Manage → Advanced DNS** and ensure `www` has
+a **CNAME** record pointing to `tyson-dowd.github.io`. If the bare domain
+`tysond.xyz` should also resolve, add four **A** records with host `@` and
+values `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, and
+`185.199.111.153`.
+
+The GitHub Pages certificate for `www.tysond.xyz` is approved. A repository
+administrator still needs to open **Settings → Pages** and enable **Enforce
+HTTPS**. DNS record changes, if needed, must be made in Namecheap by someone
+with access to the domain account.
+
+Use DNS records to point a domain at GitHub Pages; do not use Namecheap's
+**URL Redirect Record** for this hosting setup, as that forwards visitors to
+another URL instead of connecting the domain to the hosted site.
+
 ## Customization
 
 - Open `index.html` and look for `<!-- EDIT PLACEHOLDER: ... -->` comments to customize bio text, projects, hobbies, and travel plans.
